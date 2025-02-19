@@ -46,8 +46,8 @@ nav ul li a.active {
 main {
     flex-grow: 1;
     padding: 40px 20px; /* Паддинги для пространства */
-    max-width: 1000px; /* Максимальная ширина */
-    margin: 0 auto; /* Центрируем контент */
+    max-width: 1000px; 
+    margin: 0 auto; /*Оцентровка*/
 }
 
 footer {
@@ -79,7 +79,7 @@ li {
 
 /* Стили для изображений */
 img {
-    width: 70%; /* Ширина*/
+    width: 70%; 
     max-width: 800px; /*Максимальный размер */
     height: auto; /* Автоматическое сохранение пропорций */
     margin-bottom: 20px; 
@@ -89,5 +89,5 @@ img {
 
 img:hover {
     transform: scale(1.1); /* Увеличение при наведении */
-    transition: transform 0.3s ease; /* Плавное увеличение */
+    transition: transform 0.3s ease; /* Постепенное увеличение */
 }
