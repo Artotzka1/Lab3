@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Учитываем паддинги и маргины в размерах элементов */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота */
+    line-height: 1.6; /* Межстрочный интервал */
+    text-align: left; /* Выравнивание текста */
+}
+
+header {
+    background: #333;
+    color: rgb(184, 184, 184);
+    padding: 15px;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+nav ul {
+    list-style: none; /* Убираем маркеры */
+    display: flex;
+    gap: 15px; /* Пробел между пунктами */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+    padding: 10px 15px; /* Увеличиваем область клика */
+    display: block;
+    font-size: 25px; /* Увеличиваем размер шрифта */
+    border-radius: 5px; 
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid rgb(241, 63, 63); /* Подчеркивание активной ссылки */
+}
+
+main {
+    flex-grow: 1;
+    padding: 40px 20px; /* Паддинги для пространства */
+    max-width: 1000px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрируем контент */
+}
+
+footer {
+    background: #333;
+    color: rgb(179, 179, 179);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 20px; /* Отступ сверху */
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px; /* Отступы для заголовков */
+    line-height: 1.4; /* Межстрочный интервал */
+}
+
+p {
+    margin-bottom: 20px; /* Отступы для абзацев */
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px; /* Отступы между пунктами списка */
+}
+
+/* Стили для изображений */
+img {
+    width: 70%; /* Ширина*/
+    max-width: 800px; /*Максимальный размер */
+    height: auto; /* Автоматическое сохранение пропорций */
+    margin-bottom: 20px; 
+    margin-left: auto;
+    margin-right: auto
+}
+
+img:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    transition: transform 0.3s ease; /* Плавное увеличение */
+}
