@@ -7,15 +7,15 @@
     <h2>Фотографии</h2>
     <?php
     $time = time();
-    $even_image = 'https://cdn.tripster.ru/thumbs2/96e82566-847f-11ef-b246-8e8f6606cbb1.1220x600.jpeg';  // Ссылка на четную картинку
-    $odd_image = 'https://truetravel.su/upload/medialibrary/d01/1200px_Matterhorn_from_Domh_tte_2.jpg';    // Ссылка на нечетную картинку
+    $even_image = 'https://cdn.tripster.ru/thumbs2/96e82566-847f-11ef-b246-8e8f6606cbb1.1220x600.jpeg';  
+    $odd_image = 'https://truetravel.su/upload/medialibrary/d01/1200px_Matterhorn_from_Domh_tte_2.jpg';    
     
     if ($time % 2 == 0) {
-        // В случае четного времени
+        // Четное время
         echo '<a href="https://cdn.tripster.ru/thumbs2/96e82566-847f-11ef-b246-8e8f6606cbb1.1220x600.jpeg"><img src="' . $even_image . '" alt="Четная картинка" width="200"></a>';
         echo '<a href="https://truetravel.su/upload/medialibrary/d01/1200px_Matterhorn_from_Domh_tte_2.jpg"><img src="' . $odd_image . '" alt="Нечетная картинка" width="200"></a>';
     } else {
-        // В случае нечетного времени
+        // Нечетное время
         echo '<a href="https://truetravel.su/upload/medialibrary/d01/1200px_Matterhorn_from_Domh_tte_2.jpg"><img src="' . $odd_image . '" alt="Нечетная картинка" width="200"></a>';
         echo '<a href="https://cdn.tripster.ru/thumbs2/96e82566-847f-11ef-b246-8e8f6606cbb1.1220x600.jpeg"><img src="' . $even_image . '" alt="Четная картинка" width="200"></a>';
     }
