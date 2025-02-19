@@ -8,20 +8,20 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Минимальная высота */
-    line-height: 1.6; /* Межстрочный интервал */
-    text-align: left; /* Выравнивание текста */
+    min-height: 100vh; 
+    line-height: 1.6; 
+    text-align: left; 
 }
 
 header {
     background: #333;
     color: rgb(184, 184, 184);
     padding: 15px;
-    margin-bottom: 20px; /* Отступ снизу */
+    margin-bottom: 20px;
 }
 
 nav ul {
-    list-style: none; /* Убираем маркеры */
+    list-style: none; /*Для уборки маркеров*/
     display: flex;
     gap: 15px; 
 }
@@ -33,9 +33,9 @@ nav ul li {
 nav ul li a {
     color: rgb(179, 179, 179);
     text-decoration: none;
-    padding: 10px 15px; /* Увеличиваем область клика */
+    padding: 10px 15px;
     display: block;
-    font-size: 25px; /* Увеличиваем размер шрифта */
+    font-size: 25px;
     border-radius: 5px; 
 }
 
